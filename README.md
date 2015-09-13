@@ -19,4 +19,11 @@ To activate the app on heroku do:
 
 * ```$ heroku config:set SENDGRID_USERNAME=[username] SENDGRID_PASSWORD=[password]```
 
+* ```$ bundle install```
+
+* ```$ figaro install```
+
+Update ```application.yml``` with sendgrid secrets (ensure application.yml is NEVER checked in).
+
+
 * ```$ git push; git push heroku master; heroku run rake db:migrate; tput bel;```
